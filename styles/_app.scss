@@ -1,0 +1,19 @@
+@import 'normalize';
+
+@import 'variables';
+@import 'common';
+@import 'fonts';
+
+// custom
+@import './custom/main';
+
+// global
+@import './mixins';
+
+//page
+@import './compoment/footer.scss';
+@import './compoment/pages/landing.scss';
+//compoment
+@import './compoment/pages/social.scss';
+@import './compoment/pages/footter.scss';
+@import './compoment/pages/header.scss';
