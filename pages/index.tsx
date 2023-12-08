@@ -1,24 +1,15 @@
-import { ReactElement } from 'react';
-
-import PublicLayout from '@components//Layout/Public';
-
-import { Button } from 'antd';
 import { useAppDispatch } from 'hooks/useStore';
-import { handleTest } from 'redux/authentication/slice';
-import PrivateLayout from '@components//Layout/Private';
-
+import Header from '@components//pages/landing/Header';
+import Social from '@components//pages/landing/Social';
+import Footter from '@components//pages/landing/Footter';
 function Home() {
-  const dispatch = useAppDispatch();
-
   return (
-    <div className="home layout-content">
-      <Button onClick={() => dispatch(handleTest('okelaaaa'))}>click</Button>
+    <div className="landing">
+      <Header />
+      <Social />
+      <Footter />
     </div>
   );
 }
-
-Home.getLayout = function getLayout(page: ReactElement) {
-  return <PrivateLayout>{page}</PrivateLayout>;
-};
 
 export default Home;
