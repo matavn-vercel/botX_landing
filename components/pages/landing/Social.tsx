@@ -267,7 +267,7 @@ const Social: React.FC = () => {
         </div>
       </div>
       <div className="join">
-        <div className="pf">HOPE THAT'S ENOUGH!</div>
+        <div className="pf">HOPE THAT IS ENOUGH!</div>
         <div className="ps">Join XSpeeder.shop</div>
         <div className="pt">Subscrible to update news about us.</div>
         <div className="email">
